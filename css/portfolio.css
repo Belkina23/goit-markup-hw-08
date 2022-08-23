@@ -40,6 +40,8 @@ ul, ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -57,16 +59,32 @@ img {
 }
 
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    max-width: 1200px;
+  }
+}
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .section__team {
   background-color: #f5f4fa;
@@ -122,6 +140,21 @@ img {
 .list--header {
   margin-left: auto;
   align-items: center;
+}
+.list--skils-box {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .list--skils-box__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list--skils-box {
+    flex-wrap: nowrap;
+  }
 }
 .list--portfolio-grid {
   flex-wrap: wrap;

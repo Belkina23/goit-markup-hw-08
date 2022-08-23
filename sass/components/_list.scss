@@ -7,10 +7,25 @@
 		align-items: center;
 	}
 
+	&--skils-box {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+
+		@media screen and (min-width:768px) {
+			&__item { width: calc((100% - 30px) / 2); }	
+			}
+
+		@media screen and (min-width: 1200px) {
+			flex-wrap: nowrap;
+		}
+	}
+
 	&--portfolio-grid {
 		flex-wrap: wrap;
 	}
 }
+
 
 
 
