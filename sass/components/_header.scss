@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	border-bottom: 1px solid #ececec;
 	background-color: $white-color;
 }
@@ -65,5 +66,38 @@
 			width: 10px;
 			height: 16px;
 		}
+	}
+}
+
+.header-menu-button {
+	display: inline-flex;
+	margin-left: auto;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+}
+
+.header-menu-button .icon-close {
+	display: none;
+}
+
+.header-menu-button.is-open .icon-close {
+    display: block;
+}
+
+.header-menu-button.is-open .icon-menu {
+    display: none;
+}
+
+.menu-header {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: $white-color;
+
+	&.is-open {
+		display: block;
 	}
 }

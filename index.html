@@ -17,11 +17,22 @@
 	</head>
 	<body>
 		<!--Шапка сайта-->
-		<!-- <header class="header">
+		<header class="header">
 			<div class="conteiner header-nav">
-				<nav class="header-nav">
 					<a href="./index.html" class="logo"><span class="logo__firs">Web</span><span class="logo__end">Studio</span></a>
+					<button type="button" 
+					class="header-menu-button" 
+					aria-expanded="false"
+					aria-controls="menu-header"
+					data-menu-button>
+	<svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+		<use class="icon-close" href="./images/icons.svg#icon-close"></use>
+		<use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+	</svg>
+					</button>
 
+					<nav class="header-nav">
+					<div class="menu-header" id="menu-header" data-menu>
 					<ul class="header-nav__menu">
 						<li class="list__item"><a class="header-nav__link header-nav__link--act" href="./index.html"  id="home">Студия</a></li>
 
@@ -29,7 +40,7 @@
 
 						<li class="list__item"><a class="header-nav__link" href="">Контакты</a></li>
 					</ul>
-				</nav>
+				
 
 				<ul class="list list--header">
 					<li class="list__item">
@@ -46,8 +57,11 @@
 						</svg>+38 096 111 11 11</a>
 					</li>
 				</ul>
+			</nav>
 			</div>
-		</header> -->
+
+			</div>
+		</header>
 
 		<!--Основной контент-->
 		<main>
@@ -550,5 +564,6 @@
 		</div>
 		</div>
 		<script src="./js/modal.js"></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>
