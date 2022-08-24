@@ -1,6 +1,25 @@
 .footer-box {
 	display: flex;
-	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+
+	@media screen and (min-width: 490px) {
+		justify-content: space-around;
+		align-items: baseline;
+	}
+	@media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: 70px;
+	}
+
+	&__content {
+		text-align: center;
+		@media screen and (min-width: 1200px) {
+			text-align: left;
+		}
+	}
 
 	&__list {
 		display: block;
@@ -38,7 +57,7 @@
 
 //Социальные сети футера
 .social-icon-box {
-	margin-left: 70px;
+text-align: center;
 
 	&__title {
 		font-weight: 700;
@@ -48,6 +67,11 @@
 		letter-spacing: 0.03em;
 		text-transform: uppercase;
 		color: $white-color;
+		text-align: center;
+
+		@media screen and (min-width: 1200px) {
+			text-align: left;
+		}
 	}
 }
 
@@ -55,8 +79,18 @@
 //Footer Form
 .footter-form {
 	display: flex;
-	align-items: flex-end;
-	margin-left: auto;
+    flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+
+	@media screen and (min-width: 490px) {
+		display: block;
+	}
+	@media screen and (min-width: 1200px) {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+	}
 
 	&__label input {
 		width: 358px;

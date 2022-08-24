@@ -124,8 +124,12 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 490px) {
+  .button--footer {
+    margin-top: 20px;
+  }
 }
 .button__svg {
   width: 24px;
@@ -153,6 +157,24 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .list--skils-box {
+    flex-wrap: nowrap;
+  }
+}
+.list--client {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.list--client__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .list--client__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list--client {
     flex-wrap: nowrap;
   }
 }
@@ -195,6 +217,12 @@ img {
   display: flex;
   justify-content: center;
   gap: 10px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .social-icon-list {
+    padding-bottom: 30px;
+  }
 }
 .social-icon-list__icon {
   width: 20px;
@@ -367,7 +395,30 @@ img {
 
 .footer-box {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 490px) {
+  .footer-box {
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 70px;
+  }
+}
+.footer-box__content {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-box__content {
+    text-align: left;
+  }
 }
 .footer-box__list {
   display: block;
@@ -397,7 +448,7 @@ img {
 }
 
 .social-icon-box {
-  margin-left: 70px;
+  text-align: center;
 }
 .social-icon-box__title {
   font-weight: 700;
@@ -407,12 +458,31 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .social-icon-box__title {
+    text-align: left;
+  }
 }
 
 .footter-form {
   display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+@media screen and (min-width: 490px) {
+  .footter-form {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footter-form {
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+  }
 }
 .footter-form__label input {
   width: 358px;
