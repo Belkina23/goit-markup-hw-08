@@ -20,8 +20,8 @@
 	&__link {
 		position: relative;
 		display: block;
-		padding-top: 32px;
-		padding-bottom: 32px;
+		// padding-top: 32px;
+		// padding-bottom: 32px;
 		color: $titile-color;
 		transition: color 250ms $cubic-bezier;
 	
@@ -75,6 +75,10 @@
 	padding: 0;
 	border: 0;
 	background-color: transparent;
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
 }
 
 .header-menu-button .icon-close {
@@ -90,14 +94,22 @@
 }
 
 .menu-header {
-	position: absolute;
-	display: none;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	background-color: $white-color;
-
 	&.is-open {
 		display: block;
 	}
+
+	@media screen and (max-width: 767px) {
+		position: absolute;
+		display: none;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: $white-color;}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+	}
+
+
 }
