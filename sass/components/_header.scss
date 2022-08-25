@@ -87,10 +87,11 @@
 }
 
 .mob-menu {
-	// display: none;
 	position: fixed;
 	z-index: 2;
-    padding: 48px 40px;
+    padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 25px;
 	width: 100vw;
 	height: 100vh;
 	background-color: #fff;
@@ -102,14 +103,11 @@
 		justify-content: space-between;
 		overflow: auto;
 	}
-}
 
-.mob-menu-nav {
-
-}
-
-.mob-menu-nav__menu{
-
+	&.is-hidden {
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 
 .mob-menu-nav__item:not(:last-child) {
@@ -128,7 +126,6 @@
 
 .mob-menu-nav__link--act {
 	color: #2196F3;
-
 }
 
 
