@@ -2,16 +2,6 @@
 	display: flex;
 	gap: 30px;
 
-	&--header {
-		margin-left: auto;
-		align-items: center;
-
-		@media screen and (min-width:768px){
-			flex-wrap: wrap;
-			gap: 10px;
-		}
-	}
-
 	&--skils-box {
 		display: flex;
 		gap: 30px;
