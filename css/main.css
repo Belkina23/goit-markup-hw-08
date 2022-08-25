@@ -16,6 +16,10 @@ body .modal-open .mob-menu {
   overflow: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -525,7 +529,7 @@ img {
 
 .mob-menu {
   position: fixed;
-  z-index: 3;
+  z-index: 2;
   padding: 48px 40px;
   width: 100vw;
   height: 100vh;
