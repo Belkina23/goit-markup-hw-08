@@ -160,6 +160,7 @@
 	height: 100vh;
 	background-color: $white-color;
 	top: 0;
+	transition: opacity 250ms $cubic-bezier;
 	> .conteiner {
 		display: flex;
 		flex-direction: column;
