@@ -198,7 +198,16 @@
 						<li class="list__item">
 
 							<div class="box-work__img-box">
-							<img src="./images/box1.jpg" alt="работа с компьютером" width="370" />
+
+								<picture>
+									<source
+									srcset="./images/box1.jpg 1x,
+									        ./images/box1-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+									<img class="box-person__img" src="./images/box1-2x.jpg" alt="работа с компьютером" />
+								</picture>
+	
 							<p class="box-work__text">Десктопные приложения</p>
 						</div>
 						</li>
@@ -206,7 +215,16 @@
 						<li class="list__item">
 
 							<div class="box-work__img-box">
-							<img src="./images/box2.jpg" alt="работа с ноутбуком" width="370" />
+
+								<picture>
+									<source
+									srcset="./images/box2.jpg 1x,
+									        ./images/box2-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+									<img class="box-person__img" src="./images/box2-2x.jpg" alt="работа с ноутбуком" />
+								</picture>
+
 							<p class="box-work__text">Мобильные приложения</p>
 						</div>
 						</li>
@@ -214,7 +232,16 @@
 						<li class="list__item">
 
 							<div class="box-work__img-box">
-							<img src="./images/box3.jpg" alt="работа с планшетом" width="370" />
+
+								<picture>
+									<source
+									srcset="./images/box3.jpg 1x,
+									        ./images/box3-2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+									<img class="box-person__img" src="./images/box3-2x.jpg" alt="работа с планшетом" />
+								</picture>
+					
 							<p class="box-work__text">Дизайнерские решения</p>
 						</div>
 						</li>
@@ -231,7 +258,26 @@
 
 						<li class="list__item">
 							<div class="box-person">
-							<img class="box-person__img" src="./images/img1.jpg" alt="Игорь Демьяненко" width="270" />
+								
+								<picture>
+									<source
+									srcset="./images/img1.jpg 1x,
+									        ./images/img1-2x.jpg 2x"
+									media="(min-width: 1200px)"
+									/>
+									<source
+									srcset="./images/img1-tablet.jpg 1x,
+									        ./images/img1-tablet-2x.jpg 2x"
+									media="(min-width: 768px)"
+									/>
+									<source
+									srcset="./images/img1-mob.jpg 1x,
+									        ./images/img1-mob-2x.jpg 2x"
+									media="(max-width: 767px)"
+									/>
+									<img class="box-person__img" src="./images/img1-mob-2x.jpg" alt="Игорь Демьяненко" />
+								</picture>
+							
 							<div>
 							<h3 class="box-person__title">Игорь Демьяненко</h3>
 							<p lang="en" class="box-person__text">Product Designer</p>
@@ -273,7 +319,26 @@
 
 						<li class="list__item">
 							<div class="box-person">
-							<img class="box-person__img" src="./images/img2.jpg" alt="Ольга Репина" width="270" />
+
+								<picture>
+									<source
+									srcset="./images/img2.jpg 1x,
+									        ./images/img2-2x.jpg 2x"
+									media="(min-width: 1200px)"
+									/>
+									<source
+									srcset="./images/img2-tablet.jpg 1x,
+									        ./images/img2-tablet-2x.jpg 2x"
+									media="(min-width: 768px)"
+									/>
+									<source
+									srcset="./images/img2-mob.jpg 1x,
+									        ./images/img2-mob-2x.jpg 2x"
+									media="(max-width: 767px)"
+									/>
+									<img class="box-person__img" src="./images/img2-mob-2x.jpg" alt="Ольга Репина" />
+								</picture>
+
 							<div>
 							<h3 class="box-person__title">Ольга Репина</h3>
 							<p lang="en" class="box-person__text">Frontend Developer</p>
@@ -314,7 +379,26 @@
 
 						<li class="list__item">
 							<div class="box-person">
-							<img class="box-person__img" src="./images/img3.jpg" alt="Николай Тарасов" width="270" />
+
+								<picture>
+									<source
+									srcset="./images/img3.jpg 1x,
+									        ./images/img3-2x.jpg 2x"
+									media="(min-width: 1200px)"
+									/>
+									<source
+									srcset="./images/img3-tablet.jpg 1x,
+									        ./images/img3-tablet-2x.jpg 2x"
+									media="(min-width: 768px)"
+									/>
+									<source
+									srcset="./images/img3-mob.jpg 1x,
+									        ./images/img3-mob-2x.jpg 2x"
+									media="(max-width: 767px)"
+									/>
+									<img class="box-person__img" src="./images/img3-mob-2x.jpg" alt="Николай Тарасов" />
+								</picture>
+
 							<div>
 							<h3 class="box-person__title">Николай Тарасов</h3>
 							<p lang="en" class="box-person__text">Marketing</p>
@@ -355,7 +439,26 @@
 
 						<li class="list__item">
 							<div class="box-person">
-							<img class="box-person__img" src="./images/img4.jpg" alt="Михаил Ермаков" width="270" />
+							
+								<picture>
+									<source
+									srcset="./images/img4.jpg 1x,
+									        ./images/img4-2x.jpg 2x"
+									media="(min-width: 1200px)"
+									/>
+									<source
+									srcset="./images/img4-tablet.jpg 1x,
+									        ./images/img4-tablet-2x.jpg 2x"
+									media="(min-width: 768px)"
+									/>
+									<source
+									srcset="./images/img4-mob.jpg 1x,
+									        ./images/img4-mob-2x.jpg 2x"
+									media="(max-width: 767px)"
+									/>
+									<img class="box-person__img" src="./images/img4-mob-2x.jpg" alt="Игорь Демьяненко" />
+								</picture>
+
 							<div>
 							<h3 class="box-person__title">Михаил Ермаков</h3>
 							<p lang="en" class="box-person__text">UI Designer</p>

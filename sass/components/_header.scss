@@ -99,14 +99,22 @@
 	&__icon {
 		display: inline-block;
 		content: "";
-		width: 16px;
-		height: 12px;
+		width: 14px;
+		height: 10px;
 		fill: currentColor;
 		margin-right: 10px;
+		@media screen and (min-width: 1200px){
+			width: 16px;
+		    height: 12px;
+		}
 		
 		&--phone {
-			width: 10px;
-			height: 16px;
+			width: 14px;
+			height: 10px;
+			@media screen and (min-width: 1200px) {
+				width: 10px;
+				height: 16px;
+			}
 		}
 
 	}

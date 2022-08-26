@@ -185,6 +185,16 @@ img {
 .list--portfolio-grid {
   flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .list--portfolio-grid .list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list--portfolio-grid .list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
 .h2-title {
   font-weight: 700;
@@ -545,14 +555,26 @@ img {
 .header-nav__icon {
   display: inline-block;
   content: "";
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
   margin-right: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .header-nav__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
 .header-nav__icon--phone {
-  width: 10px;
-  height: 16px;
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-nav__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .menu-open {

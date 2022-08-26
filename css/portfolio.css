@@ -185,6 +185,16 @@ img {
 .list--portfolio-grid {
   flex-wrap: wrap;
 }
+@media screen and (min-width: 768px) {
+  .list--portfolio-grid .list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list--portfolio-grid .list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 
 .h2-title {
   font-weight: 700;
@@ -358,14 +368,26 @@ img {
 .header-nav__icon {
   display: inline-block;
   content: "";
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   fill: currentColor;
   margin-right: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .header-nav__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
 .header-nav__icon--phone {
-  width: 10px;
-  height: 16px;
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-nav__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .menu-open {
@@ -478,18 +500,33 @@ img {
 
 .filtre-list {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  justify-content: flex-start;
   gap: 8px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .filtre-list {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filtre-list {
+    margin-bottom: 50px;
+  }
 }
 .filtre-list__button {
   background-color: #f5f4fa;
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.625;
   text-align: center;
   letter-spacing: 0.03em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color cubic-bezier(0.4, 0, 0.2, 1), box-shadow cubic-bezier(0.4, 0, 0.2, 1);
@@ -502,11 +539,17 @@ img {
 
 .portfolio-block {
   background: #fff;
+  height: 100%;
 }
 .portfolio-block__description {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-block__description {
+    flex-grow: 1;
+  }
 }
 .portfolio-block__title {
   font-weight: 700;
@@ -527,6 +570,13 @@ img {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-block__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 .portfolio-block__link:hover, .portfolio-block__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);

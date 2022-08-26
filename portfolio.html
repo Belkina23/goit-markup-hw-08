@@ -68,9 +68,9 @@
 
 				<nav class="mob-menu-nav">
 					<ul class="mob-menu-nav__menu">
-						<li class="mob-menu-nav__item"><a class="mob-menu-nav__link mob-menu-nav__link--act" href="./index.html"  id="home">Студия</a></li>
+						<li class="mob-menu-nav__item"><a class="mob-menu-nav__link" href="./index.html"  id="home">Студия</a></li>
 
-						<li class="mob-menu-nav__item"><a class="mob-menu-nav__link" href="./portfolio.html">Портфолио</a></li>
+						<li class="mob-menu-nav__item"><a class="mob-menu-nav__link mob-menu-nav__link--act" href="./portfolio.html">Портфолио</a></li>
 
 						<li class="mob-menu-nav__item"><a class="mob-menu-nav__link" href="">Контакты</a></li>
 					</ul>
@@ -127,7 +127,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/1img.jpg" alt="" />
+
+									<picture>
+										<source
+										srcset="./images/1img.jpg 1x,
+												./images/1img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/1img-tab.jpg 1x,
+												./images/1img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/1img-mob.jpg 1x,
+												./images/1img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/1img-mob-2x.jpg" alt="Технокряк" />
+									</picture>
+
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -145,7 +164,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/2img.jpg" alt="" />
+									
+									<picture>
+										<source
+										srcset="./images/2img.jpg 1x,
+												./images/2img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/2img-tab.jpg 1x,
+												./images/2img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/2img-mob.jpg 1x,
+												./images/2img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/2img-mob-2x.jpg" alt="Постер New Orlean vs Golden Star" />
+									</picture>
+							
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -163,7 +201,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/3img.jpg" alt="" />
+															
+									<picture>
+										<source
+										srcset="./images/3img.jpg 1x,
+												./images/3img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/3img-tab.jpg 1x,
+												./images/3img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/3img-mob.jpg 1x,
+												./images/3img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/3img-mob-2x.jpg" alt="Ресторан Seafood" />
+									</picture>
+					
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -181,7 +238,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/4img.jpg" alt="" />
+																						
+									<picture>
+										<source
+										srcset="./images/4img.jpg 1x,
+												./images/4img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/4img-tab.jpg 1x,
+												./images/4img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/4img-mob.jpg 1x,
+												./images/4img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/4img-mob-2x.jpg" alt="Проект Prime" />
+									</picture>
+
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -199,7 +275,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/5img.jpg" alt="" />
+																												
+									<picture>
+										<source
+										srcset="./images/5img.jpg 1x,
+												./images/5img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/5img-tab.jpg 1x,
+												./images/5img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/5img-mob.jpg 1x,
+												./images/5img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/5img-mob-2x.jpg" alt="Проект Boxes" />
+									</picture>
+							
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -217,7 +312,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/6img.jpg" alt="" />
+																																	
+									<picture>
+										<source
+										srcset="./images/6img.jpg 1x,
+												./images/6img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/6img-tab.jpg 1x,
+												./images/6img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/6img-mob.jpg 1x,
+												./images/6img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/6img-mob-2x.jpg" alt="Inspiration has no Borders" />
+									</picture>
+						
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -235,7 +349,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/7img.jpg" alt="" />
+																																								
+									<picture>
+										<source
+										srcset="./images/7img.jpg 1x,
+												./images/7img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/7img-tab.jpg 1x,
+												./images/7img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/7img-mob.jpg 1x,
+												./images/7img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/7img-mob-2x.jpg" alt="Издание Limited Edition" />
+									</picture>
+					
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -253,7 +386,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/8img.jpg" alt="" />
+																																												
+									<picture>
+										<source
+										srcset="./images/8img.jpg 1x,
+												./images/8img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/8img-tab.jpg 1x,
+												./images/8img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/8img-mob.jpg 1x,
+												./images/8img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/8img-mob-2x.jpg" alt="Проект LAB" />
+									</picture>
+							
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
@@ -271,7 +423,26 @@
 							<div class="portfolio-block">
 							<a href="" target="_blank" class="portfolio-block__link">
 								<div class="portfolio-block__owerlay-block">
-								<img width="370" src="./images/9img.jpg" alt="" />
+																																													
+									<picture>
+										<source
+										srcset="./images/9img.jpg 1x,
+												./images/9img-2x.jpg 2x"
+										media="(min-width: 1200px)"
+										/>
+										<source
+										srcset="./images/9img-tab.jpg 1x,
+												./images/9img-tab-2x.jpg 2x"
+										media="(min-width: 768px)"
+										/>
+										<source
+										srcset="./images/9img-mob.jpg 1x,
+												./images/9img-mob-2x.jpg 2x"
+										media="(max-width: 767px)"
+										/>
+										<img class="box-person__img" src="./images/9img-mob-2x.jpg" alt="Growing Business" />
+									</picture>
+						
 								<p class="portfolio-block__owerlay-text">Ресурс предлагает комплексные предложения с 
 									разным уровнем функционала и сервисов. 
 									Все это позволит посетителю получить исчерпывающие сведения 
