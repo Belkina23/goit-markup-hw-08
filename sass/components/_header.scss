@@ -215,13 +215,20 @@
     font-size: 34px;
     line-height: calc(40 / 34);
     letter-spacing: 0.02em;
+    color: $accent-color;
 
-color: $accent-color;
+	@media screen and (min-width: 320px) {
+		font-size: 30px;
+	}
+	@media screen and (min-width: 480px) {
+		font-size: 34px;
+	}
 }
 
 
 .mob-menu-social {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 10px;
 }
 
